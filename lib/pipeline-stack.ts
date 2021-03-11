@@ -23,7 +23,7 @@ export class PipelineStack extends cdk.Stack {
       actionName: 'GitHub_Source',
       owner: 'skinny85',
       repo: 'sam-example-cdk-codepipeline',
-      oauthToken: cdk.SecretValue.secretsManager('my-github-private-repos-token'),
+      oauthToken: cdk.SecretValue.secretsManager('my-github-token'),
       output: sourceOutput,
       branch: 'master',
     });
