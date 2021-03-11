@@ -2,7 +2,7 @@
 
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { SampleCdkAppStack } from '../lib/sample-cdk-app-stack';
+import { PipelineStack } from '../lib/pipeline-stack';
 
 const app = new cdk.App();
-new SampleCdkAppStack(app, 'SampleCdkAppStack');
+new PipelineStack(app, 'SamExampleCodePipelineStack');
